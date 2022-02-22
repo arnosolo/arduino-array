@@ -88,9 +88,9 @@ class Array {
     };
 
     /**
-    * @brief  Remove last item from array, this operation will change the array
-    * @param
-    * @return Last item of the array, or a T() if nothing is in array
+    * @brief  iterate over all items in an array
+    * @param  callback should looks like printStr(String str) if your array looks like Array<String> arr;
+    * @return 
     */
     void forEach(func_t callback) {
       for(int i=0; i < _length; i++) {
@@ -98,41 +98,7 @@ class Array {
       }
     }
 
-
     int length() { return _length; };
 };
-
-// template <class T>
-// Array<T> & Array<T>::operator=(const Array &arr) {
-//   // Prevent arr = arr
-//   if (_data == arr._data) return *this;
-  
-//   // If arr has nothing
-//   if (arr._data == NULL) {
-//     if (_data) delete[] _data;
-//     _data = NULL;
-//     _size = 0;
-//     return *this;
-//   }
-
-//   // If the original array is smaller than new array
-//   if (_size < arr._size) {
-//     if (_data) delete[] _data;
-//     _data = new T[arr._size];
-//   }
-
-//   memcpy(_data, arr._data, sizeof(T) * arr._size);
-//   _size = arr._size;
-//   return *this;
-// }
-
-// template <class T>
-// void Array<T>::push(const T &item) {
-
-// }
-
-// template <class T>
-// T Array<T>::pop() {
-// }
 
 #endif 

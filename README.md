@@ -1,6 +1,6 @@
 ### Array Class for Arduino
 
-Somehow Arduino doesn't support cpp stand lib, so here we are.
+Somehow Arduino doesn't support cpp standard lib, so here we are.
 
 Implemented functions:
 
